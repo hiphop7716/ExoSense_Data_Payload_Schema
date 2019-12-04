@@ -107,7 +107,7 @@ channels: # "device channel" as opposed to an "asset signal"
 ### Example JSON Channel Data (data_in) Packet
 ```
 {
-  "Front_Vibration":{"frequency":[1,2,..],"mag":[0.01,0.02,...]}
+  "Front_Vibration":{"freq":[1,2,..],"mag_x":[0.01,0.02,...],"mag_y":{[0.01,0.02,...]}
 }
 ```
 
