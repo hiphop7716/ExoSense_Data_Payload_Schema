@@ -1,6 +1,6 @@
 # ExoSense™ Data Payload Define
 
-Reference from:
+### Reference:
 1. https://github.com/exosite/industrial_iot_schema/blob/master/data-types.md
 2. https://github.com/exosite/industrial_iot_schema/blob/master/channel-signal_io_schema.md
 
@@ -72,6 +72,7 @@ channels: # "device channel" as opposed to an "asset signal"
 ```
 
 ## Data Types
+### Example JSON Channel
 ```
 {
   "channels": {
@@ -98,7 +99,24 @@ channels: # "device channel" as opposed to an "asset signal"
         "report_rate": 60000,
         "timeout": 360000
       }
-    },
+    }
+  }
+}
+```
+
+### Example JSON Channel Data (data_in) Packet
+```
+{
+  "Front_Vibration":{"frequency":[1,2,..],"mag":[0.01,0.02,...]}
+}
+```
+
+---
+
+### Example Number Channel
+```
+{
+  "channels": {
 	"Battery_Percentage": {
       "display_name": "Battery_Percentage",
       "description": "",
@@ -137,6 +155,14 @@ channels: # "device channel" as opposed to an "asset signal"
       }
     }
   }
+}
+```
+
+### Example Number Channel Data (data_in) Packet
+```
+{
+  "Battery_Percentage": 95,
+  "Temperature": 40
 }
 ```
 
