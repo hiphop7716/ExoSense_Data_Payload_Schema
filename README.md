@@ -73,6 +73,12 @@ channels: # "device channel" as opposed to an "asset signal"
 
 ## Data Types
 ### Example JSON Channel
+* JSON (unit-less)
+    * Key (data_type): JSON
+    * Accepted Units (data_unit): Not Used
+    * Primitive Type (primitive_type): JSON
+    * UI Unit Abbreviation: na
+    * Notes: Any JSON blob
 ```
 {
   "channels": {
@@ -114,6 +120,18 @@ channels: # "device channel" as opposed to an "asset signal"
 ---
 
 ### Example Number Channel
+* Temperature
+    * Key (data_type): TEMPERATURE
+    * Primitive Type (primitive_type): NUMERIC
+    * Accepted Units (data_unit) with UI unit abbreviation:
+
+* Battery Percentage
+    * Key (data_type): BATTERY_PERCENTAGE
+    * Primitive Type (primitive_type): NUMERIC
+    * Accepted Units (data_unit) with UI unit abbreviation:
+        * `PERCENT: %`
+    * Notes: Device diagnostic
+
 ```
 {
   "channels": {
