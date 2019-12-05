@@ -4,6 +4,7 @@
 1. https://github.com/exosite/industrial_iot_schema/blob/master/data-types.md
 2. https://github.com/exosite/industrial_iot_schema/blob/master/channel-signal_io_schema.md
 
+
 ## Channel Configuration Definition Description
 ```
 # config_io channel definition 
@@ -70,6 +71,7 @@ channels: # "device channel" as opposed to an "asset signal"
             min: ${converted_channel_min_number}  # optional - channel expected min after conversion
             max: ${converted_channel_max_number}  # optional - channel expected max after conversion
 ```
+
 
 ## Data Types Definition
 ### Example JSON Channel
