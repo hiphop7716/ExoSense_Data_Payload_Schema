@@ -31,15 +31,15 @@ channels: # "device channel" as opposed to an "asset signal"
         display_name: "${channel_name_string}" # *required* - Human readable channel name
         description: "${channel_description_string}" # optional - One-liner description 
         properties: 
-          data_type: "${defined_type_enum}" # *required* - See "types" section - in this case it would be "TEMPERATURE"
-          primitive_type: "${defined_primitive_type_enum}" # optional - See "types" section - in this case it would be "NUMERIC"
-          data_unit: "${unit_enum}" # *required* - Enumerated lookup to unit types for the given type
-          precision: ${precision_number_of decimal_places}  # optional but recommended
-          locked: ${locked_config_state} # optional but recommended - Boolean, marks as not editable by UI, defaults to false if not present
-          ## Additional Channel Properties
-          min: ${channel_min_number}  # optional - channel expected value min, applies to numberic type only
-          max: ${channel_max_number}  # optional - channel expected value max, applies to numberic type only
-          device_diagnostic: false # optional - Tells ExoSense that this is a “meta” signal that describes an attribute of the devices health
+            data_type: "${defined_type_enum}" # *required* - See "types" section - in this case it would be "TEMPERATURE"
+            primitive_type: "${defined_primitive_type_enum}" # optional - See "types" section - in this case it would be "NUMERIC"
+            data_unit: "${unit_enum}" # *required* - Enumerated lookup to unit types for the given type
+            precision: ${precision_number_of decimal_places}  # optional but recommended
+            locked: ${locked_config_state} # optional but recommended - Boolean, marks as not editable by UI, defaults to false if not present
+            ## Additional Channel Properties
+            min: ${channel_min_number}  # optional - channel expected value min, applies to numberic type only
+            max: ${channel_max_number}  # optional - channel expected value max, applies to numberic type only
+            device_diagnostic: false # optional - Tells ExoSense that this is a “meta” signal that describes an attribute of the devices health
         protocol_config :  # optional - if used by device client 
             sample_rate : ${sample_time_in_ms} # optional - device client's sample rate for sensor
             report_rate : ${report_time_in_ms} # optional but recommended - rate at which data sent to platform
