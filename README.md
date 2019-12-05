@@ -26,7 +26,7 @@ channels: # "device channel" as opposed to an "asset signal"
             sample_rate : "${sample_time_in_ms}" # optional - device client's sample rate for sensor
             report_rate : "${report_time_in_ms}" # optional but recommended - rate at which data sent to platform
             timeout : "${timeout_period_time_in_ms}" # optional but recommended - used by application to provide timeout indication, typically several times expected report rate
-    **######### Example channel config 2 - Expanded Options - Remote Device Configuration Usage ############**
+    ######### Example channel config 2 - Expanded Options - Remote Device Configuration Usage ############
     ${device_channel_id2}:   # unique channel identifier string
         display_name: "${channel_name_string}" # *required* - Human readable channel name
         description: "${channel_description_string}" # optional - One-liner description 
