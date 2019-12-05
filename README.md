@@ -1,6 +1,6 @@
 # ExoSense™ Data Payload Define
 
-### Reference:
+## Reference:
 1. https://github.com/exosite/industrial_iot_schema/blob/master/data-types.md
 2. https://github.com/exosite/industrial_iot_schema/blob/master/channel-signal_io_schema.md
 
@@ -71,7 +71,7 @@ channels: # "device channel" as opposed to an "asset signal"
             max: ${converted_channel_max_number}  # optional - channel expected max after conversion
 ```
 
-## Data Types
+## Data Types Definition
 ### Example JSON Channel
 * JSON (unit-less)
     * Key (data_type): JSON
