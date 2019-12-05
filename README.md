@@ -4,7 +4,6 @@
 1. https://github.com/exosite/industrial_iot_schema/blob/master/data-types.md
 2. https://github.com/exosite/industrial_iot_schema/blob/master/channel-signal_io_schema.md
 
-
 ## Channel Configuration Definition Description
 ```
 # config_io channel definition 
@@ -71,7 +70,6 @@ channels: # "device channel" as opposed to an "asset signal"
             min: ${converted_channel_min_number}  # optional - channel expected min after conversion
             max: ${converted_channel_max_number}  # optional - channel expected max after conversion
 ```
-
 
 ## Data Types Definition
 ### Example JSON Channel
@@ -147,7 +145,7 @@ channels: # "device channel" as opposed to an "asset signal"
             "properties": {
                 "data_type": "BATTERY_PERCENTAGE",
                 "primitive_type": "NUMERIC",
-                "data_unit": "PERCENT",
+                "data_unit": "PERCENT"
             },
             "protocol_config": {
                 "sample_rate": 10,
@@ -165,7 +163,7 @@ channels: # "device channel" as opposed to an "asset signal"
             "properties": {
                 "data_type": "TEMPERATURE",
                 "primitive_type": "NUMERIC",
-                "data_unit": "DEG_CELSIUS",
+                "data_unit": "DEG_CELSIUS"
             },
             "protocol_config": {
                 "sample_rate": 10,
